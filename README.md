@@ -6,7 +6,7 @@ Este proyecto toma la versión de la Biblia libre en formato texto plano (`spavb
 
 ## Versión
 
-**Versión actual: 1.2.15**
+**Versión actual: 1.2.16**
 
 - **MAJOR**: Cambios incompatibles (ej. reestructuración completa del JSON).
 - **MINOR**: Nuevas funcionalidades compatibles (ej. agregar metadatos o herramientas adicionales).
