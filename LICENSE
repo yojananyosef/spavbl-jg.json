@@ -5,13 +5,20 @@ By exercising the Licensed Rights (defined below), You accept and agree to be bo
 Section 1 – Definitions.
 
 Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
-...
-[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0); consulta https://creativecommons.org/licenses/by-sa/4.0/legalcode para el texto completo]
+
+[... Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0); consulta `https://creativecommons.org/licenses/by-sa/4.0/legalcode` para el texto completo ...]
 
 ---
 
-Copyright (c) 2025 Johan Gutierrez
+Copyright (c) 2026 Johan Gutierrez
 
-Este proyecto distribuye el archivo `spavbl.json`, que es un derivado del texto bíblico de la Versión Biblia Libre bajo CC BY-SA 4.0. Por lo tanto, el proyecto completo se distribuye bajo la misma licencia para cumplir con los términos de share-alike.
+Este proyecto distribuye el archivo `spavbl-jg.json`, que es un derivado (Obra Adaptada) del texto bíblico de la **Free Bible Version (VBL)** (Copyright © 2018-2020 Jonathan Gallagher y Shelly Barrios de Avila), obtenido originalmente de eBible.org.
 
-Para más detalles sobre la licencia del contenido original, consulta el README.md.
+De acuerdo con los términos de la licencia **CC BY-SA 4.0**, esta adaptación se distribuye bajo la misma licencia para cumplir con la cláusula de "Compartir Igual" (Share-Alike).
+
+**Atribución Requerida:**
+- **Autores Originales:** Jonathan Gallagher y Shelly Barrios de Avila (VBL).
+- **Colaboradores:** Gustavo Sanabria y Rebekah Põldaas.
+- **Editor de la Adaptación:** Johan Gutierrez (Estructura JSON y vinculación de notas).
+
+Para más detalles sobre el proceso de transformación y créditos completos, consulta el archivo [README.md](README.md) y [CHANGELOG.md](CHANGELOG.md).

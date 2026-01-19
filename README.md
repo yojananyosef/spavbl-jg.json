@@ -1,93 +1,78 @@
-# Proyecto Biblia JSON
+# Versión Biblia Libre (Edición Johan Gutierrez)
 
 ## Descripción
+Este proyecto toma la **Versión Biblia Libre (VBL)** en su versión más reciente (5.2 - Octubre 2025) y la transforma en un formato JSON altamente optimizado para bases de datos NoSQL (como Firebase Realtime Database) y aplicaciones modernas.
 
-Este proyecto toma la versión de la Biblia libre en formato texto plano (`spavbl_vpl.txt`) de fecha 13-06-2025 y la convierte a un formato JSON organizado para facilitar su uso en aplicaciones y análisis.
+A diferencia de otras versiones, este proyecto enriquece el texto bíblico vinculando directamente **3,823 notas explicativas** originales a sus respectivos versículos, permitiendo una experiencia de lectura profunda y técnicamente eficiente.
 
 ## Versión
+**Versión actual: 1.0.0-alpha.1** (Basada en VBL 5.2 de fecha 2025-12-22)
 
-**Versión actual: 1.2.16**
+### Sistema de Versionado
+Para que esta versión crezca de forma clara, he implementado una estructura basada en Semantic Versioning (SemVer):
 
-- **MAJOR**: Cambios incompatibles (ej. reestructuración completa del JSON).
-- **MINOR**: Nuevas funcionalidades compatibles (ej. agregar metadatos o herramientas adicionales).
-- **PATCH**: Correcciones de errores o mejoras menores.
+- **1.0.0-alpha.1**: Es la versión actual (la estructura base).
+- **1.0.1, 1.0.2...**: Para correcciones de ortografía o puntuación.
+- **1.1.0...**: Si se añaden nuevas funciones o cambios importantes en las notas.
+- **2.0.0...**: Si en el futuro se decide cambiar palabras o el estilo del lenguaje de forma extensiva, alejándote mucho de la original.
 
 ## Fuente de Datos
+Los datos originales provienen de **eBible.org** bajo el formato `spavbl_html.zip` (Zipped mobile HTML). El proceso de transformación realizado por **Johan Gutierrez** incluye:
+1. Parsing de archivos HTML para extracción de texto y referencias.
+2. Mapeo dinámico de notas al pie de página (`FN`) a cada versículo.
+3. Reordenamiento de libros según el canon bíblico clásico.
+4. Estandarización de metadatos de autoría y licencia.
 
-El archivo de entrada `spavbl_vpl.txt` contiene el texto completo de la Biblia en el siguiente formato:
-
-```
-GEN 1:1 En el principio, Dios creó los cielos y la tierra.
-GEN 1:2 La tierra carecía de forma y estaba vacía; la oscuridad cubría la superficie del abismo y el Espíritu de Dios se movía sobre la superficie de las aguas.
-GEN 1:3 Y Dios dijo: “¡Que haya luz!” y hubo luz.
-...
-```
-
-Este archivo es proporcionado por [eBible.org](https://ebible.org/details.php?id=spavbl) Aunque originalmente contiene solo el texto bíblico, este proyecto lo enriquece añadiendo notas explicativas en la estructura JSON tomadas del archivo `spavbl_html.zip`.
-
-## Estructura del JSON de Salida
-
-El archivo de salida `spavbl.json` tiene una estructura jerárquica. Cada versículo es un objeto que contiene el texto y, opcionalmente, un array de notas.
+## Estructura del JSON (bible_optimized.json)
+El archivo principal utiliza una estructura plana bajo la clave `libros`, optimizada para consultas directas por código de libro (ej. `GEN`, `EXO`):
 
 ```json
 {
-  "biblia": {
-    "vbl": {
-      "nombreCompleto": "Versión Bíblia Libre",
-      "at": {
-        "gen": {
-          "nombre": "Génesis",
-          "categoria": "Pentateuco",
-          "capitulo": {
-            "1": {
-              "1": {
-                "texto": "En el principio, Dios creó los cielos y la tierra."
-              },
-              "2": {
-                "texto": "La tierra carecía de forma y estaba vacía; la oscuridad cubría la superficie del abismo y el Espíritu de Dios se movía sobre la superficie de las aguas."
-              },
-              "5": {
-                "texto": "Entonces Dios llamó a la luz “día” y a la oscuridad le llamó “noche”. Así que hubo noche y mañana, lo cual fue el primer día.",
-                "notas": [
-                  "Es importante decir que el “día” se mide desde la oscuridad a la luz, que sigue siendo el método judío para calcular los días."
-                ]
-              },
-              ...
-            }
+  "info": {
+    "nombre": "Versión Biblia Libre (Edición Adaptada)",
+    "editor_adaptacion": "Johan Gutierrez",
+    "version_base": "Free Bible Version (VBL) 5.2",
+    "licencia": "CC BY-SA 4.0"
+  },
+  "libros": {
+    "GEN": {
+      "nombre": "Génesis",
+      "testamento": "at",
+      "capitulos": {
+        "1": {
+          "1": {
+            "texto": "En el principio, Dios creó los cielos y la tierra.",
+            "notas": []
+          },
+          "5": {
+            "texto": "Entonces Dios llamó a la luz “día”...",
+            "notas": [
+              "Es importante decir que el “día” se mide desde la oscuridad a la luz..."
+            ]
           }
-        },
-        ...
+        }
       }
     }
   }
 }
 ```
 
-Esta estructura permite que cada versículo contenga no solo su texto (`"texto"`) sino también un array de notas explicativas (`"notas"`), si existen.
-
 ## Contribución
-
-Si deseas contribuir, por favor sigue las mejores prácticas para el manejo de textos sagrados.
+Si deseas contribuir a la optimización técnica o reportar errores en la vinculación de notas, por favor sigue las mejores prácticas para el manejo de textos sagrados y mantén la integridad del mensaje original.
 
 ## Licencia
+El texto de la Biblia utilizado es la **Free Bible Version (VBL)**, copyright © 2018-2020 Jonathan Gallagher y Shelly Barrios de Avila. 
 
-El texto de la Biblia utilizado en este proyecto es la **Versión Biblia Libre** (Free Bible Version), copyright © 2018-2020 **Jonathan Gallagher y Shelly Barrios de Avila**. Está disponible bajo la licencia **Creative Commons Attribution Share-Alike 4.0 (CC BY-SA 4.0)**.
+Esta adaptación de formato y estructura realizada por **Johan Gutierrez** se distribuye bajo la misma licencia **Creative Commons Attribution-Share Alike 4.0 (CC BY-SA 4.0)**.
 
-Esta licencia es permisiva y permite:
+**Condiciones de la licencia:**
+1. **Atribución**: Debes incluir la información de copyright original y citar a Johan Gutierrez como editor de esta versión optimizada.
+2. **Indicar Cambios**: Debes indicar que esta es una obra derivada y que los cambios realizados (formateo JSON, vinculación de notas) no son necesariamente avalados por los autores originales.
+3. **Compartir Igual**: Cualquier obra derivada de este JSON debe distribuirse bajo la misma licencia CC BY-SA 4.0.
 
-- Compartir y redistribuir el texto en cualquier formato.
-- Hacer revisiones y adaptaciones razonables.
-
-Con las siguientes condiciones:
-
-- Debes incluir la información de copyright y fuente original.
-- Si realizas cambios, debes indicar claramente que los hiciste y que el licenciante original no necesariamente respalda tus cambios.
-- Si redistribuyes, debes hacerlo bajo la misma licencia **(CC BY-SA 4.0)**.
-
-Para más detalles, consulta los términos completos en [Creative Commons](https://creativecommons.org/licenses/by-sa/4.0/) o el sitio de [eBible.org](https://ebible.org/details.php?id=spavbl)
-
-Nota: Revisar y adaptar la Palabra de Dios implica una gran responsabilidad para ser fiel a ella (ver **Apocalipsis 22:18-19**).
+Para más detalles, consulta [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
 ---
+**Nota espiritual**: Revisar y adaptar la Palabra de Dios implica una gran responsabilidad para ser fiel a ella (ver Apocalipsis 22:18-19).
 
-_Proyecto actualizado el 30 de octubre de 2025._
+*Proyecto actualizado el 19 de enero de 2026.*
