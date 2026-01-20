@@ -8,7 +8,7 @@ A diferencia de otras versiones, este proyecto enriquece el texto bíblico vincu
 
 ## Versión
 
-**Versión actual: 1.0.0-rc.4** (Basada en VBL 5.2 de fecha 2025-12-22)
+**Versión actual: 1.0.0-rc.5** (Basada en VBL 5.2 de fecha 2025-12-22)
 
 ### Sistema de Versionado
 

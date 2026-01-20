@@ -2,6 +2,15 @@
 
 Este archivo registra todas las modificaciones realizadas a la versión adaptada de la Versión Biblia Libre (VBL), cumpliendo con los requisitos de la licencia Creative Commons Attribution-Share Alike (BY-SA) 4.0 International.
 
+## [1.0.0-rc.5] - 2026-01-20
+
+### Corregido
+
+- GEN 6:2: Nota revisada y normalizada antes tenia texto adicional mezclado.
+- GEN 6:3: Nota trasladada de GEN 6:2 a donde correspondia.
+- GEN 6:4: Nota revisada y normalizada antes tenia texto adicional mezclado.
+- GEN 6:14: Nota trasladada de GEN 6:4 a donde correspondia.
+
 ## [1.0.0-rc.4] - 2026-01-20
 
 ### Corregido
