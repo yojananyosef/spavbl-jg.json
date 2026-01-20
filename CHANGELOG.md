@@ -2,6 +2,12 @@
 
 Este archivo registra todas las modificaciones realizadas a la versión adaptada de la Versión Biblia Libre (VBL), cumpliendo con los requisitos de la licencia Creative Commons Attribution-Share Alike (BY-SA) 4.0 International.
 
+## [1.0.0-rc.3] - 2026-01-20
+
+### Corregido
+
+- GEN 4:23: Corrección ortográfica: "mi" → "mí".
+
 ## [1.0.0-rc.2] - 2026-01-20
 
 ### Corregido
