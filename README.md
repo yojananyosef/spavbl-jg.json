@@ -4,7 +4,7 @@
 
 Este proyecto toma la **Versión Biblia Libre (VBL)** en su versión más reciente (5.2 - Octubre 2025) y la transforma en un formato JSON altamente optimizado para bases de datos NoSQL y aplicaciones modernas.
 
-A diferencia de otras versiones, este proyecto enriquece el texto bíblico vinculando directamente **3,823 notas explicativas** originales a sus respectivos versículos, permitiendo una experiencia de lectura profunda y técnicamente eficiente.
+A diferencia de otras versiones, este proyecto enriquece el texto bíblico vinculando directamente **3,823+ notas explicativas** originales a sus respectivos versículos, permitiendo una experiencia de lectura profunda y técnicamente eficiente.
 
 ## Versión
 

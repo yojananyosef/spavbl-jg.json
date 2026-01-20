@@ -2,6 +2,18 @@
 
 Este archivo registra todas las modificaciones realizadas a la versión adaptada de la Versión Biblia Libre (VBL), cumpliendo con los requisitos de la licencia Creative Commons Attribution-Share Alike (BY-SA) 4.0 International.
 
+## [1.0.0-rc.2] - 2026-01-20
+
+### Corregido
+
+- GEN 2:14: Separadas las notas en dos entradas distintas y eliminados marcadores residuales (p. ej. ‡).
+  - Nota 1: "Tigris": literalmente "Hidekel" (ver Daniel 10:4).
+  - Nota 2: "Éufrates": literalmente "Parat", considerado sinónimo del Éufrates.
+- GEN 2:25: Añadida referencia: "Ver la nota en el versículo 2:7."
+- GEN 3:18: Corrección de puntuación: "Ver 1:30 . " → "Ver 1:30."
+- GEN 3:22: Nota trasladada de GEN 3:18 a donde correspondia.
+- Metadatos: `edicion_adaptada.proceso_transformacion` clarificado a "3,823+"; añadida/normalizada `url_repositorio`.
+
 ## [1.0.0-rc.1] - 2026-01-20
 
 ### Corregido
@@ -35,14 +47,14 @@ Esta versión ha sido creada siguiendo este flujo de trabajo para garantizar la 
 
 1. **Fuente**: Se obtuvo la versión 5.2 (Octubre 2025) de la VBL desde `ebible.org` en formato `spavbl_html.zip`.
 2. **Conversión**: Los archivos HTML fueron parseados para extraer el texto y convertirlo a formato JSON.
-3. **Enriquecimiento**: Se procesaron 3,823 notas al pie de página originales, vinculándolas mediante un mapeo de referencias HTML directamente a cada versículo.
+3. **Enriquecimiento**: Se procesaron 3,823+ notas al pie de página originales, vinculándolas mediante un mapeo de referencias HTML directamente a cada versículo.
 4. **Optimización**: Se reestructuró el JSON para ser eficiente en bases de datos NoSQL, eliminando la necesidad de consultas pesadas para obtener notas.
 5. **Canonización**: Se aplicó el orden bíblico clásico a los libros.
 
 ### Añadido
 
 - Nueva estructura de datos optimizada para bases de datos NoSQL.
-- Vinculación directa de las 3,823 notas al pie de página originales con sus respectivos versículos.
+- Vinculación directa de las 3,823+ notas al pie de página originales con sus respectivos versículos.
 - Metadatos detallados que incluyen colaboradores originales (Gustavo Sanabria, Rebekah Põldaas) y fuentes.
 - Información legal clara sobre la naturaleza de la obra derivada bajo la licencia CC BY-SA 4.0.
 - Nuevo `README.md` profesional con sistema de versionado sugerido para crecimiento de la edición.
