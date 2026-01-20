@@ -2,6 +2,15 @@
 
 Este archivo registra todas las modificaciones realizadas a la versión adaptada de la Versión Biblia Libre (VBL), cumpliendo con los requisitos de la licencia Creative Commons Attribution-Share Alike (BY-SA) 4.0 International.
 
+## [1.0.0-rc.4] - 2026-01-20
+
+### Corregido
+
+- GEN 5:9: Corrección ortográfica: "Enóc" → "Enoc".
+- GEN 5:21: Corrección ortográfica: "Maturalén" → "Matusalén".
+- GEN 5:24: Nota revisada y normalizada antes tenia texto adicional mezclado.
+- GEN 5:29: Nota trasladada de GEN 5:24 a donde correspondia.
+
 ## [1.0.0-rc.3] - 2026-01-20
 
 ### Corregido
