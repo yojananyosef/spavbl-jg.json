@@ -6,12 +6,12 @@ Este proyecto toma la **Versión Biblia Libre (VBL)** en su versión más recien
 A diferencia de otras versiones, este proyecto enriquece el texto bíblico vinculando directamente **3,823 notas explicativas** originales a sus respectivos versículos, permitiendo una experiencia de lectura profunda y técnicamente eficiente.
 
 ## Versión
-**Versión actual: 1.0.0-alpha.1** (Basada en VBL 5.2 de fecha 2025-12-22)
+**Versión actual: 1.0.0-alpha.2** (Basada en VBL 5.2 de fecha 2025-12-22)
 
 ### Sistema de Versionado
 Para que esta versión crezca de forma clara, he implementado una estructura basada en Semantic Versioning (SemVer):
 
-- **1.0.0-alpha.1**: Es la versión actual (la estructura base).
+- **1.0.0-alpha.2**: Es la versión actual (la estructura base).
 - **1.0.1, 1.0.2...**: Para correcciones de ortografía o puntuación.
 - **1.1.0...**: Si se añaden nuevas funciones o cambios importantes en las notas.
 - **2.0.0...**: Si en el futuro se decide cambiar palabras o el estilo del lenguaje de forma extensiva, alejándote mucho de la original.
@@ -23,7 +23,7 @@ Los datos originales provienen de **eBible.org** bajo el formato `spavbl_html.zi
 3. Reordenamiento de libros según el canon bíblico clásico.
 4. Estandarización de metadatos de autoría y licencia.
 
-## Estructura del JSON (bible_optimized.json)
+## Estructura del JSON (spavbl-jg.json)
 El archivo principal utiliza una estructura plana bajo la clave `libros`, optimizada para consultas directas por código de libro (ej. `GEN`, `EXO`):
 
 ```json
@@ -75,4 +75,4 @@ Para más detalles, consulta [Creative Commons BY-SA 4.0](https://creativecommon
 ---
 **Nota espiritual**: Revisar y adaptar la Palabra de Dios implica una gran responsabilidad para ser fiel a ella (ver Apocalipsis 22:18-19).
 
-*Proyecto actualizado el 19 de enero de 2026.*
+*Proyecto actualizado el 20 de enero de 2026.*

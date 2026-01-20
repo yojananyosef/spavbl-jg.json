@@ -2,6 +2,14 @@
 
 Este archivo registra todas las modificaciones realizadas a la versión adaptada de la Versión Biblia Libre (VBL), cumpliendo con los requisitos de la licencia Creative Commons Attribution-Share Alike (BY-SA) 4.0 International.
 
+## [1.0.0-alpha.2] - 2026-01-20
+
+### Cambiado
+- Refactorización de la estructura del código para mejorar la legibilidad y el mantenimiento.
+
+### Corregido
+- Actualización del nombre del archivo JSON en el README de `bible_optimized` a `spavbl-jg`.
+
 ## [1.0.0-alpha.1] - 2026-01-19
 
 ### Proceso de Transformación Detallado
