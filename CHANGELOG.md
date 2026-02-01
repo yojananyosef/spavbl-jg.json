@@ -2,6 +2,21 @@
 
 Este archivo registra todas las modificaciones realizadas a la versión adaptada de la Versión Biblia Libre (VBL), cumpliendo con los requisitos de la licencia Creative Commons Attribution-Share Alike (BY-SA) 4.0 International.
 
+## [1.1.0-rc.2] - 2026-01-31
+
+### Optimizado
+
+- **Eficiencia NoSQL**: Se eliminaron 27,478 arreglos de notas vacíos (`"notas": []`) y se aplicó la misma lógica a los títulos. Ahora las claves solo existen si contienen datos, optimizando el tamaño del JSON y el rendimiento de la REST API.
+- **Metadatos**: Actualizada la descripción técnica en la sección `info` para reflejar las optimizaciones de espacio.
+
+## [1.1.0-rc.1] - 2026-01-31
+
+### Añadido
+
+- **Títulos de Secciones**: Integración de 2,423 títulos (headers) extraídos, vinculados mediante scraping de clases CSS a sus respectivos versículos.
+- **Mapeo OSIS**: Implementación de un sistema de mapeo para compatibilizar códigos OSIS (`Gen`, `Exod`, `Ps`) con las claves de libros del proyecto (`GEN`, `EXO`, `PSA`).
+- **Compatibilidad**: Los títulos asociados a introducciones (versículo 0) se normalizaron vinculándolos al versículo 1.
+
 ## [1.0.0-rc.5] - 2026-01-20
 
 ### Corregido

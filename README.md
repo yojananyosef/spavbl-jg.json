@@ -4,11 +4,11 @@
 
 Este proyecto toma la **Versión Biblia Libre (VBL)** en su versión más reciente (5.2 - Octubre 2025) y la transforma en un formato JSON altamente optimizado para bases de datos NoSQL y aplicaciones modernas.
 
-A diferencia de otras versiones, este proyecto enriquece el texto bíblico vinculando directamente **3,823+ notas explicativas** originales a sus respectivos versículos, permitiendo una experiencia de lectura profunda y técnicamente eficiente.
+A diferencia de otras versiones, este proyecto enriquece el texto bíblico vinculando directamente **3,800+ notas explicativas** originales y **2,400+ títulos de secciones** a sus respectivos versículos, permitiendo una experiencia de lectura profunda y técnicamente eficiente.
 
 ## Versión
 
-**Versión actual: 1.0.0-rc.5** (Basada en VBL 5.2 de fecha 2025-12-22)
+**Versión actual: 1.1.0-rc.2** (Basada en VBL 5.2 de fecha 2025-12-22)
 
 ### Sistema de Versionado
 
@@ -21,12 +21,13 @@ Para que esta versión crezca de forma clara, he implementado una estructura bas
 
 ## Fuente de Datos
 
-Los datos originales provienen de **eBible.org** bajo el formato `spavbl_html.zip` (Zipped mobile HTML). El proceso de transformación realizado por **Johan Gutierrez** incluye:
+Los datos originales provienen de **eBible.org** bajo el formato `spavbl_html.zip` (Zipped mobile HTML). Los títulos de secciones fueron extraídos de internet. El proceso de transformación realizado por **Johan Gutierrez** incluye:
 
 1. Parsing de archivos HTML para extracción de texto y referencias.
 2. Mapeo dinámico de notas al pie de página (`FN`) a cada versículo.
 3. Reordenamiento de libros según el canon bíblico clásico.
 4. Estandarización de metadatos de autoría y licencia.
+5. Extracción y vinculación de títulos de secciones (`headers`) mediante scraping de clases CSS.
 
 ## Estructura del JSON (spavbl-jg.json)
 
@@ -48,7 +49,7 @@ El archivo principal utiliza una estructura plana bajo la clave `libros`, optimi
         "1": {
           "1": {
             "texto": "En el principio, Dios creó los cielos y la tierra.",
-            "notas": []
+            "titulos": ["La creación"]
           },
           "5": {
             "texto": "Entonces Dios llamó a la luz “día”...",
