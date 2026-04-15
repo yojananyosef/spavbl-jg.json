@@ -2,6 +2,16 @@
 
 Este archivo registra todas las modificaciones realizadas a la versión adaptada de la Versión Biblia Libre (VBL), cumpliendo con los requisitos de la licencia Creative Commons Attribution-Share Alike (BY-SA) 4.0 International.
 
+## [1.1.0-rc.3] - 2026-04-15
+
+### Corregido
+
+- Génesis 1-10: Correcciones de ortografía, gramática, acentuación y separación de palabras.
+- GEN 6:21: Concordancia verbal ajustada en "almacénala" -> "almacénalo".
+- GEN 8:19 y GEN 9:15: Corrección de espaciado en "todos agrupados" y "pacto entre".
+- GEN 4, 5 y 10: Normalización de nombres propios y variantes de transliteración (por ejemplo, Mahalaleel, Mizrayim, Rehobot Ir, Heber).
+- GEN 9-10: Reubicación y depuración de notas para mantener coherencia con el versículo correspondiente.
+
 ## [1.1.0-rc.2] - 2026-01-31
 
 ### Optimizado
